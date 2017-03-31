@@ -1,0 +1,20 @@
+body {
+  background-color: lightblue;
+}
+
+#home_header {
+  text-align:center;
+}
+
+#home_next {
+  margin-top:200px;
+  text-align:center;
+}
+
+#home_button {
+  height:50px;
+  width:150px;
+  text-align:center;
+  color: blue;
+  font-size: 24px;
+}
