@@ -1,4 +1,4 @@
-
+//Author: Joshua Thurston
 
 function answerOne()
 {
@@ -17,7 +17,54 @@ function answerOne()
     {
       setCookie("answer", 0, 1);
     }
+    window.location.href="problemTwo.html";
   }
+}
+
+function answerTwo()
+{
+  var answer = document.getElementById("problemTwoAnswer");
+  var previousAnswer = Number(getCookie("answer"));
+  if(answer.value == "yarffej")
+  {
+    setCookie("answer", previousAnswer+1, 1);
+    window.location.href="problemThree.html";
+  }
+  else
+  {
+    setCookie("answer", previousAnswer, 1);
+    window.location.href="problemThree.html";
+  }
+}
+
+function answerThree()
+{
+  var answer = document.getElementById("problemThreeAnswer");
+  var previousAnswer = Number(getCookie("answer"));
+  if(isNaN(answer.value))
+  {
+    alert("Must be a number!");
+  }
+  else
+  {
+    if(answer.value == 36)
+    {
+      setCookie("answer", previousAnswer+1, 1);
+    }
+    else
+    {
+      setCookie("answer", previousAnswer, 1);
+    }
+    window.location.href="result.html";
+  }
+}
+
+function calculateResults()
+{
+  var previousAnswer = Number(getCookie("answer"));
+  previousAnswer /= 3;
+  previousAnswer *= 100;
+  document.getElementById("result").innerHTML = previousAnswer + "%";
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
