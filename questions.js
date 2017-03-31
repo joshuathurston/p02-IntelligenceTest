@@ -9,7 +9,7 @@ function answerOne()
   }
   else
   {
-    if(answer.value == 987)
+    if(answer.value == 610)
     {
       setCookie("answer", 1, 1);
     }
