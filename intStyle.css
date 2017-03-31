@@ -2,8 +2,9 @@ body {
   background-color: lightblue;
 }
 
-#home_header {
+.title_header {
   text-align:center;
+  font-family:Papyrus, fantasy;
 }
 
 #home_next {
@@ -17,4 +18,17 @@ body {
   text-align:center;
   color: blue;
   font-size: 24px;
+}
+
+table#problemOne
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+td
+{
+  font-size: 32px;
+  text-align: center;
+  font-family: Papyrus, fantasy;
 }
